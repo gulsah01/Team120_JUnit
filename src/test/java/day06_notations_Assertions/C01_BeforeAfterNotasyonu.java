@@ -1,4 +1,4 @@
-package day05_notations_Assertions;
+package day06_notations_Assertions;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.After;
