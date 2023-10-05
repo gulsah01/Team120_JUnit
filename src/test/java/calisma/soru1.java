@@ -1,6 +1,7 @@
 package calisma;
 
 import com.github.javafaker.Faker;
+import org.junit.Assert;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -41,11 +42,24 @@ public class soru1 extends TestBase {
         select.selectByVisibleText("Eurozone (euro)");
 
         //9. “amount” kutusuna bir sayi girin
+        WebElement amount =driver.findElement(By.xpath("//input[@id='pc_amount']"));
+        amount.sendKeys("1000000");
 
         //10. “US Dollars” in secilmedigini test edin
-        //11. “Selected currency” butonunu secin
-        //12. “Calculate Costs” butonuna basin sonra “purchase” butonuna basin
-        //13. “Foreign currency cash was successfully purchased.” yazisinin ciktigini kontrol edin.
+        WebElement dolar=driver.findElement(By.id("pc_inDollars_true"));
+        Assert.assertFalse(dolar.isSelected());
 
+        //11. “Selected currency” butonunu secin
+        WebElement currency =driver.findElement(By.id("pc_inDollars_false"));
+        currency.click();
+
+        //12. “Calculate Costs” butonuna basin sonra “purchase” butonuna basin
+        WebElement calculate =driver.findElement(By.id("purchase_cash"));
+        calculate.click();
+
+        //13. “Foreign currency cash was successfully purchased.” yazisinin ciktigini kontrol edin.
+        String expectedYazi="Foreign currency cash was successfully purchased.";
+        String actulaYazi= driver.findElement(By.xpath("//div[@id='alert_content']")).getText();
+        Assert.assertEquals(expectedYazi,actulaYazi);
     }
 }
