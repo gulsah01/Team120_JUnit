@@ -10,7 +10,7 @@ import java.util.List;
 public class C02_IFrame extends TestBase {
     @Test
     public void test01(){
-//1) http://demo.guru99.com/test/guru99home/ sitesine gidiniz
+        //1) http://demo.guru99.com/test/guru99home/ sitesine gidiniz
         //   cikarsa cookies kabul edin
         driver.get("http://demo.guru99.com/test/guru99home/");
         WebElement cookiesIFrame = driver.findElement(By.id("gdpr-consent-notice"));
