@@ -22,7 +22,8 @@ public class C01_ReadExcel {
         Workbook workbook= WorkbookFactory.create(fis);
         // olusturdugumuz worbook, online olarak exel dosyasina erismez
         //18. satirda fileInputStream kullanarak excel deki bilgileri aldik
-
+        // 20.satirda fis'in aldigi bilgileri kullanarak kodlarimizin icinde
+        // fiziki excl dosyasinin bir kopyasini olusturmus olduk.
 
         Sheet sheet= workbook.getSheet("sayfa1");
         Row row= sheet.getRow(3); // index

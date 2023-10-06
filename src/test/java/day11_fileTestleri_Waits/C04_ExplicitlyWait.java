@@ -46,7 +46,7 @@ public class C04_ExplicitlyWait {
         Assert.assertTrue(textBox.isEnabled());
         ReusableMethods.bekle(2);
         driver.close();
-        
+
     }
     }
 

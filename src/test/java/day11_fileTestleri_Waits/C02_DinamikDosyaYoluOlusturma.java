@@ -17,7 +17,7 @@ public class C02_DinamikDosyaYoluOlusturma {
             otomatik olarak almak icin 2 secenek vardir
 
             System.getProperty("user.home") ===> bilgisayarin ana dosya yolunu verir
-            System.getProperty("user.dir")  ===>
+            System.getProperty("user.dir")  ===> dinamik text dosya yolunu verir
 
          */
 
