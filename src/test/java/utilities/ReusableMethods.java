@@ -53,6 +53,7 @@ public class ReusableMethods {
     public static void webElementFotografCek(WebElement webElement, String resimAdi){
         // her screenshot'in benzersiz bir isme sahip olmasi icin
         // 1- method'un cagrildigi yerden resim adi yollanacak
+
         // 2- sonuna tarih etiketi ekleyelim 2310062013
 
         LocalDateTime ldt = LocalDateTime.now();
