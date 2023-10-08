@@ -10,6 +10,8 @@ public class P01 extends TestBase {
     public void ahmet(){
         System.out.println("Ahmet");
 
+
+
     }
     @Test @Ignore
     public void resul(){
