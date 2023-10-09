@@ -1,28 +1,33 @@
 package practice;
-
 import org.junit.Ignore;
 import org.junit.Test;
-import utilities.TestBase;
 
-public class P01 extends TestBase {
+public class P01 {
+
+        /*
+            @BeforeClass ------> Sadece 1 kere çalışıyor
+            @Before  ----------> Her testten önce bir kere çalışır
+            @After   ---------->Her testin sonunda bir kere çalışır
+            @AfterClass   ------> Tüm testler bitince bir kere çalışır
+            @Test   ------------>Test kodlarının yer aldığı kısımdır.
+        ​
+         */
 
     @Test
-    public void ahmet(){
+    public void test08(){
         System.out.println("Ahmet");
-
-
-
     }
-    @Test @Ignore
-    public void resul(){
+
+    @Test
+    public void test01(){
         System.out.println("Resul");
     }
 
     @Test
-    public void nergiz(){
+    public void test13(){
         System.out.println("Nergiz");
 
-    }
+}
 
 }
 
