@@ -1,13 +1,11 @@
-package CanimKendim;
+package A01_Всёбудетхорошо;
 
-import org.junit.Assert;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import utilities.TestBase;
 
 import java.util.List;
-import java.util.Set;
 
 public class ss1 extends TestBase {
 @Test

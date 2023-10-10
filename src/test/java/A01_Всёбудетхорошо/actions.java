@@ -1,6 +1,5 @@
-package CanimKendim;
+package A01_Всёбудетхорошо;
 
-import org.checkerframework.checker.units.qual.K;
 import org.junit.Assert;
 import org.junit.Test;
 import org.openqa.selenium.By;

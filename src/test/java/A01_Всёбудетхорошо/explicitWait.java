@@ -1,4 +1,4 @@
-package CanimKendim;
+package A01_Всёбудетхорошо;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.Assert;
