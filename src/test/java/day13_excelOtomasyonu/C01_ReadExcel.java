@@ -15,10 +15,6 @@ public class C01_ReadExcel {
     public void readExcelTestleri() throws IOException {
         String dosyaYolu ="src/test/java/day13_excelOtomasyonu/ulkeler.xlsx";
 
-
-
-
-
         FileInputStream fis =new FileInputStream(dosyaYolu);
 
         Workbook workbook= WorkbookFactory.create(fis);

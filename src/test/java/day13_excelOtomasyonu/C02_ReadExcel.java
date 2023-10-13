@@ -34,6 +34,7 @@ public class C02_ReadExcel {
 
         // fiziki kullanilan satir sayisinin 8 oldugunu test edin
 
+
         int expectedFizikiSatirSayisi = 8;
         int actualFizikiSatirSayisi = sayfa2.getPhysicalNumberOfRows();
 
