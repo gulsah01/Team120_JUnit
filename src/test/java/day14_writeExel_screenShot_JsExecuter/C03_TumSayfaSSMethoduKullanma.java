@@ -43,4 +43,17 @@ public class C03_TumSayfaSSMethoduKullanma extends TestBase {
         // sonucu raorlamak icin tum sayfa screenshot alip kaydedin
         ReusableMethods.tumSayfaFotografCek(driver,"youtube");
     }
+    @Test
+    public void amazon(){
+        // amazon anasayfaya gidin
+        driver.get("https://www.amazon.com");
+
+        // url in amazon icerdigini test edin
+        String expectedIcerik ="amazon";
+        String actualIcerik=driver.getCurrentUrl();
+        Assert.assertTrue(actualIcerik.contains(expectedIcerik));
+
+        // tum sayfa ss al
+        ReusableMethods.tumSayfaFotografCek(driver,"amazon");
+    }
 }
