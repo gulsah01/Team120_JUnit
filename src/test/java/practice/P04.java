@@ -50,5 +50,11 @@ public class P04 {
         double resultDouble = Double.parseDouble(result);
         Assert.assertFalse(resultDouble < 25);
 
+        if (resultDouble<25){
+            System.out.println("Sukur hala 25 olmadi");
+        }else {
+            System.out.println("eyvah!");
+        }
+
     }
 }
