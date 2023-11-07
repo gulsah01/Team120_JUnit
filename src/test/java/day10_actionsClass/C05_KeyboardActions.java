@@ -17,11 +17,13 @@ public class C05_KeyboardActions extends TestBase {
         driver.findElement(By.xpath("//button[@title='Allow all cookies']")).click();
         //3- Yeni hesap olustur butonuna basalim
         driver.findElement(By.xpath("//*[@*='open-registration-form-button']")).click();
+
         //4- Ad, soyad, mail ve sifre kutularina deger yazalim ve kaydol tusuna basalim
         WebElement isimKutusu= driver.findElement(By.name("firstname"));
 
         Actions actions = new Actions(driver);
         Faker faker = new Faker();
+
 
         String email= faker.internet().emailAddress();
 
